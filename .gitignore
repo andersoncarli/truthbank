@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+dist/
+data/
+chats/
+try/
+old/
+*_
+*.log
+*.zip

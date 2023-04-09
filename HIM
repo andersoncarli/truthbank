@@ -1,0 +1,190 @@
+## HIM: The Human Ideological Map
+
+It is a multidimensional map of human ideas. It should contain all the concepts and ideas from every branch of human knowledge using a natural organization.
+
+Each word we have ever created and all those yet to be created are semantically linked to others according to the psychological concept of multidimensional free association.
+
+By free association, we mean the closeness of one word to another, as one thing reminds us of another due to their semantic proximity. This connection can be quantitative or abstract.
+
+The closer the associated concepts can be organized in a line from least to greatest, the closer the words are linked.
+
+Let's consider the words ['none', 'some', 'most', 'all'].
+
+They have one thing in common: They belong to a grammatical class called 'Quantitative,' meaning they represent a quantity, even if approximate.
+
+These concepts are used in Aristotelian epistemology, in the 'Oppositon Sqaure' where 'some' and 'most' are used to determine approximate quantities, defining 'absence,' 'minority,' 'majority,' and 'totality.'
+
+Each of them denotes a position within the 'quantitative' dimension, where 'none' is on the left, denoting zero, and 'all' is on the right, meaning one. In between are the words 'some' and 'most' to determine a second level of precision, where 'some' means less than half (<0.5), and 'most' means more than half (>0.5).
+
+To obtain a better mathematical view, considering that all these words belong to the same dimensional line, they could be rearranged in the following way, with the corresponding values on the 'probability mean' associated with the word:
+
+```javascript 
+None   Some      Unknow     Most      All
++------------------+-------------------+
+0                 .50                  1
+```
+
+When we use the word 'some,' we refer to a certain amount of that subject, less than half or the minority, but not none or some.
+
+Similarly, when we use 'most,' we mean more than half or the majority, but not all.
+
+```javascript 
+None Some Most All
++--------+---------+---------+---------+
+0 .25 .50 .75 1
+```
+This can be extended with all quantitative words to get a better precision.
+
+```javascript 
+0.00-0.01 none, // less than 1% -3 std
+0.01-0.10 few // less than 10% -2 std
+0.10-0.40 some // less than 40% -1 std
+0.40-0.60 unknown // around 50% the mean
+0.60-0.90 many // more than 60% +1 std
+0.90-0.99 most // more than 90% +2 std
+0.99-1.00 all // more than 99% +3 std
+```
+
+Darwin's species classification system is flawed because it tries to represent a multidimensional concept in a unidimensional way. In this system, each concept is subordinate to a higher concept in the form of a unidimensional tree. This is similar to what we call 'single inheritance,' where a species must necessarily derive from a single parent species.
+
+Like this:
+
+- Mammals
+   - Homo sapiens
+   - Chimpanzees
+   - Cetaceans
+     - Dolphins
+     - Whales
+
+In reality, this relationship should be defined in the form of a multidimensional tree where each species "implements a common interface" with another species.
+
+Interface, in the same sense used in object-oriented programming, establishes a multiple inheritance relationship where both dolphins and humans inherit the IMmammal interface. (I made a drawing of a 3D cube with a point in the center and a tree of concepts emerging from the I (interface) like IMammal ISwin or IScalate or IThink) 
+
+
+# The TruthBank
+
+TruthBank is a bank of premises and tool to derive logical inference from this premises.
+
+It uses of the square of opposition and the Pareto optimality principle in the context of epistemology, to identify the credibility of a proposition.
+
+The different aspects of epistemology and logic, 
+and how they can be applied in the context of the TruthBank Server.
+
+How one can know the big truth by collecting a lot of small truths.
+
+Start your answer by outlining an index, and describing the chapters. Planning how the plot should happen.
+
+# Glosary & Definitions
+
+### `Knowledge` is a justified true belief, which involves having evidence or reasons for believing that something is true.
+
+### `Belief` is accepting something as true without necessarily having evidence or reasons to support it.
+
+### `Credibility` The degree to which something is believable or trustworthy. In order to establish the truth of a proposition, one needs to have reliable and valid evidence to support it.
+
+### `Axioms` and `Dogmas` What they are and how they differ.
+
+### `Logical inference` is ..., it involves using existing knowledge to draw conclusions based on the relationships between propositions.
+
+### `Proposition`: is
+
+### `Epistemology` is
+
+### The `Optimum of Pareto` Also know as the Pareto optimality principle can be used to determine the best balance between conflicting objectives.
+
+### `Linguistics`, `Syntax` and `Semantic` 
+
+###  `Parsers` the `English Grammar`
+
+### `Propositional English`, a subset of the English Grammar, 
+
+### The `Chain of premises` and propositions.
+
+### The `TruthBank` is a knowledge base that contains a set of propositions and their associated premises and conclusions.
+
+### The `TruthServer` is a software application that allows users to input a proposition and receive a conclusion and a list of premises.
+
+### `Logic` is
+
+### The logic and nature of the truth. 
+
+### The `Bayesian Thinking` & `Bayesian Networks`, 
+
+The incremental gain of knowledge. & How the unknown can be inferred from the observation of facts.
+
+Then, use the Sunny/Cloudy unknown season example to introduce Bayesian Thinking, 
+introducing the ideas of knowledge, beliefs and probabilities. Using the time-series table used in this Sunny/Cloudy chat.
+
+### The conditions to a proposition be considered true.
+
+### The `Square of Opposition` 
+
+         Is a diagram that shows the logical relationships between propositions. The four vertices of the square of opposition represent different types of propositions, based on whether they are universal or particular. like none, some, most, all, and whether they are affirmative or negative
+
+### The opposition square (op-square) with probabilistic weights. 
+
+### The new naming in the nodes, (none, some, most, all) and why this is better over A E I O, analyze the original proposition and how it could induce false conclusions. Demonstrate How the new naming avoids that with a simple formula 
+
+    not (no/some/most/all) Subject Link Predicate # Link is the OpSquare
+
+Highlight wow the new naming is a lot more natural to read negative propositions like 'not some', 'not most' and 'not none' and 'not all'.
+
+### Use this example proposition to start the conversation
+
+    most birds can fly
+
+talk about the link word (usually a verb like can, do, not )
+
+[negation] [quantifier] <subject> [link] [verb] [predicate]
+            most          birds    can    fly 
+  not       all           birds    can    fly
+  not       most          cats     do     meows  loudly at full moon nights.
+            most          birds    can    fly
+  not       some          birds    can    fly
+            some          birds    can    fly
+  not       some          birds    can    fly        
+                                   it     rains
+
+## Then it should analyse the logical nuances of the other formations
+
+  no cats are dogs 
+  some dogs are cats
+  no dos are cats
+  not all cats are not dogs
+  all cats are not dogs
+
+  most dogs are friendly
+  not/all cats love dogs
+  not/most cats love dogs
+  few dogs love cats
+
+## Introducing more elaborated sentences, that forms a chain of squares and predicates.
+
+This kitty is a ferocious fluff ball.
+Some dogs are dangerous. They should be avoided.
+Most birds can fly, but penguins no.
+It's late at night, the kids dont arrived yet.
+Instead of turning left, she turned,”
+
+
+# The Quest for Finding the Universal Truths.
+
+Thats right! Also, when as label has a credibility 1, it states that all elements of that group has that atrribute. like  lay.egss:1 has.feather:1 do.walk:1 
+Three atrributes appliable to that all birds. 
+
+If an association is exclusive, meaning that that attribute do not apply to any member of that group it will have the value 0. like 
+cat":{"count": 500,"labels": ["is.dog:0 lay.egss:0 has.feather:0 do.walk:1 make.nest:20" ] },
+}
+If an association do not apply, it do not generate labels. like 'this cat is dog'
+
+# The TruthServer 
+
+The TruthServer is a software application that allows users to input a proposition and receive a conclusion and a list of premises. It is implemented ins Node.js.
+- The server should have a simple, responsive interface with a query box and a results box.
+- The interface can be styled using CSS, with a minimalistic design and a readable font.
+
+- Some of the most unusual and creative ideas in this chat include the use of the square of opposition and the Pareto optimality principle in the context of epistemology, as well as the idea of a TruthBank Server as a tool for logical inference. 
+
+- The best conversations between the master and the apprentice involved exploring the different aspects of epistemology and logic, how they can be applied in the context of a TruthBank Server and the quest for the final Truth.
+
+

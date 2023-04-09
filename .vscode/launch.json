@@ -1,0 +1,136 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "nodemon cleanChat",
+      // "args": [ "tests" ],
+      "program": "${workspaceFolder}/source/cleanChat.js",
+      "args": [
+        "${workspaceFolder}/chats/TruthBank.md"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/libs/**/*.js",
+        "${workspaceFolder}/utils/**/*.js",
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "nodemon",
+      "runtimeArgs": [
+        "--ignore",
+        "./chats/",
+        "--ignore",
+        "./doc/",
+        "--use-strict",
+        "--expose-gc",
+        "--trace-uncaught",
+        "-L",
+        "-I"
+      ],
+      "restart": false,
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "DEBUG": "G",
+        "NODE_NO_WARNINGS": "1",
+        "VSCODE_DEBUG_MODE": "1"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "name": "TruthServer",
+      "program": "${workspaceFolder}/server.js",
+      // "args": [ "${workspaceFolder}/chats/TruthBank.md" ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/libs/**/*.js",
+        "${workspaceFolder}/utils/**/*.js",
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "nodemon",
+      "runtimeArgs": [
+        "--use-strict",
+        "--expose-gc",
+        "--trace-uncaught",
+        "-L",
+        "-I"
+      ],
+      "restart": false,
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "DEBUG": "G",
+        "NODE_NO_WARNINGS": "1",
+        "VSCODE_DEBUG_MODE": "1"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "name": "transform",
+      // "args": [ "tests" ],
+      "program": "${workspaceFolder}/transform.js",
+      "args": [
+        "gpt",
+        "transformer"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/libs/**/*.js",
+        "${workspaceFolder}/utils/**/*.js",
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "nodemon",
+      "runtimeArgs": [
+        "--use-strict",
+        "--expose-gc",
+        "--trace-uncaught",
+        "-L",
+        "-I"
+      ],
+      "restart": false,
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "DEBUG": "G",
+        "NODE_NO_WARNINGS": "1",
+        "VSCODE_DEBUG_MODE": "1"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "name": "Run current file",
+      // "args": [ "tests" ],
+      "program": "${file}",
+      "args": [
+        "gpt",
+        "transformer"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/libs/**/*.js",
+        "${workspaceFolder}/utils/**/*.js",
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "nodemon",
+      "runtimeArgs": [
+        "--use-strict",
+        "--expose-gc",
+        "--trace-uncaught",
+        "-L",
+        "-I"
+      ],
+      "restart": false,
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "DEBUG": "G",
+        "NODE_NO_WARNINGS": "1",
+        "VSCODE_DEBUG_MODE": "1"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    }
+  ]
+}
