@@ -1,128 +1,27 @@
-Hello World! My name is Anderson Carli, a Brazilian software engineer and budding writer.
+## Introduction
+TruthServer is a web application that allows users to submit logical statements and propositons and receive a credibility score for that statement. it is the practical application of the [TruthBank](./BOOK) project/book. Using a custom implementation of a Bayesian truth testing algorithm to calculate the credibility. Or a random one working as a oracle at user will.
 
-Lately, I've been hearing prominent voices in the AI community calling for a halt or pause in AI development due to concerns about its rapid progress.
+The algorithm works by breaking down each statement into its sub-propositions or premises and assigning prior probabilities to each sub-proposition based on the quantifier used in the statement. It then uses evidence from previously submitted premises to update the probabilities of each sub-proposition and calculates the conditional probability of each sub-proposition being true given the updated evidence.
 
-Should it be stopped? I don't think that's possible anymore. The genie is already out of the bottle, and there's no turning back.
+The credibility score of the statement is then calculated as the product of the negated conditional probabilities of each sub-proposition. The less likely a statement can be denied, the lower is its truthfullness. The opposite way, the most controversial is the statement and most negative it faces, it will less likely to be true. meaning that the proper context should be defined, with a proper chain of premises.
 
-So, instead of discussing an improbable pause in development, let's focus on a secure plan to create better AIs based on a foundation of truth.
+## Getting Started
+To get started with TruthServer, clone the repository to your local machine and navigate to the project directory. Then, install the dependencies by running the following command:
 
-What follows is the magnum opus of my life—an organized knowledge base of my memories and insights.
+    npm install
+Once the dependencies are installed, start the server by running the following command:
 
-This work is a blend of a technical book with an autobiographical narrative, a collection of insights, knowledge notes, and chronicles, as well as dreams and fantasies. Since I could never truly separate these elements in my mind, I present them all together in free association.
+    npm start
 
-Please approach this content with a critical mind and a grain of salt, as it was written by a delusion-prone human, assisted by a hallucinatory AI. =)
+The server will start listening on port 3000 by default. Navigate to http://localhost:3000 in your web browser to access the application.
 
-I hope you find it interesting and valuable. I will do my best to make it both entertaining and informative. All corrections and collaborations are welcome.
+## Usage
+To use TruthServer, enter a logical statement in the text input field on the home page and click the "Submit" button. The application will calculate the credibility score of the statement and display it on the result page.
 
-Acknowledgements
+You can also add premises to the knowledge base by clicking the "Add Premise" button on the home page and entering a logical statement in the input field that appears. The application will use the premises to update the probabilities of sub-propositions in future statements.
 
-I owe this work to my masters, Jesus and Ra Uru Hu.
-Thank you, Jesus, for your love and generosity, which serve as examples for every moment of my life until my last breath.
-Thank you, Ra, for your comprehensive, chewed knowledge, digestible even for a man like me. Thank you for paving the road. You are also my beloved master. I owe every word of this work to your immense wisdom and generous contribution.
-Thanks to many others whose names are mentioned in this book and the countless truth-seeking men who came before and after me.
+## Contributing
+If you would like to contribute to TruthServer, feel free to submit a pull request with your changes. Before submitting a pull request, please make sure that your changes are well-documented and that they do not break any existing functionality.
 
-I dedicate this work to my children, Ana and Daniel. Thank you for every moment you brought light into my life.
-
-# The TruthBank - The quest for Finding the Universal Truths.
-
-This book aims to lay down the foundations of a new knowledge system to ideintify, collect and cristalize *universal truths* based on the following four pillars:
-
-1. The 64 universal concepts of the Iching - The book of Changes
-2. The Aristotelian epistemology and the square of opposition
-3. The Bayesian Networks and the incremental gain of knowledge
-4. The Transformer Neural network
-
-Trough this book I will tie some connections between this toughts systems, aiming to produce a solid strating point for a new kind of AI: A Truth oriented one. 
-
-Using a logical and philosofical perspective aiming a practical definition, appliable in the current context of current the Artificial Inteligence development state. 
-
-# Table of contents
-
-1. The Nature of Truth: Unveiling the philosophy of knowledge and belief, discussing epistemology and different sources of knowledge and the criteria for justifying beliefs.
-3. Beliefs, Knowledge, and Credibility: Wisdom, intuition, and mystery.
-4. The Basics of Logic: Introducing logical operators, the square of opposition, and foundational concepts in logic.
-9. NLP and Parsers: Examining natural language processing and parsers. 
-- Parts of Speach
-- The Vocabulary class, creating a list of words, with labels and synonins. 
-10. Parsers, Compilers and Grammars: Introducing compilers and grammars.
-- The Parser class
-- A full English grammar 
-5. The Square of Oppositions and Probability: A tool to evaluate probabilities and relationships between propositions. 
-6. Propositional Logic: Delving deeper into propositional logic, on the pursuit of deeper understanding. Aiming to produce a credibilitit score for each statement based on predefined premises.
-7. Pareto Optimality: Introducing the Pareto optimality principle, with a determination in finding the best balance between conflicting objectives.
-11. Neural Networks and Tensors: Exploring the foundations of neural networks, tensors, and their applications.
-8. The power of Bayesian Thinking and Networks: Exploring Bayesian thinking and networks.
-12. Bayesian Truth Based Transformers: Introducing Bayesian truth-based transformers, bringing new perspectives, and the willingness to embrace unconventional approaches to find balance, fairness, and final simple determinist crystal clear definition of truth
-17. Genetic Algorithms and Optimizers: Introducing genetic algorithms and optimizers, reflecting the Star's themes of inspiration, hope, and guidance as they are used to improve the TruthBank Server's performance.
-18. Newton's Method and Annealing: Exploring Newton's method and annealing as optimization techniques, relating to the Moon card's themes of intuition, illusion, and the subconscious.
-19. Classifiers and Transformers: Introducing classifiers and transformers, connecting to the Sun card's symbolism of success, vitality and enlightenment as they contribute to extracting meaning from natural language.
-13. The TruthBank: Presenting the concept of the TruthBank.
-21. Looking into the future of the TruthBank, logical inference, and their potential evolution, the completion, integration, and fulfillment.
-14. Building the TruthBank Server: Providing a practical guide for constructing a TruthBank Server, embodying the themes of balance, moderation, and harmony. 15. The User Interface: Examining user interface design principles for the TruthBank Server, with a focus on simplicity and readability.
-SOML The Simple Object Markup Language
-16. The inference Engines: Discussing the TruthBank Server's inference engine and its potential to shake established beliefs, potentially causing upheaval, sudden change, and revelation.
-20. The Ethics and Consequences of free widespreaded mass competing of of Truths: Discussing the ethical considerations surrounding the TruthBank and the pursuit of truth, themes of awakening, redemption, and responsibility.
-22. Concluding the journey, restarting the circle, Looking to the future and recounting the lessons learned about truth, logic, and the pursuit of knowledge. 
-
-
-## Preamble - My Trip to Here
-
-It was September 22, 2011. I waked up at morning and my wife said she was tired and will not work on that day. (A thing she never did before) So I decided go to a near bakery buy some stuff to the breakfast. 
-
-My dog, the family pet, 3 years old pintcher, seen me preparing to go outside came happily in my direction asking for a walk. So I obeyed it, and grab the collar and the rope. He was called Walle because it was a little trash eater.
-
-Outside, I walked with him in the hope, until we get into the marginal bike lane of a road, beeing a safe place we are used to walk, I released it to piss in a near sugar canes bush. I had developed a kind of telepatic relation with him. Where every hand movent was undertood. It was trained to running or stoping allways by my side. 
-
-But on that day, I made a sad mistake. Instead walk with him until the end of the block at the pedestrian crossing as he was trained, I unconsciouly decided to jaywalk and cross the road in the midle of the block. Waiting for the dog, I stoped beween two parked cars, and called it: Walle came! 
-
-That little bastard, came in my direction as a rocket, and didn't stopped besides me as usual, but instead confused the two parked cars as a safe tunnel run rightly to the movimented street, in the exact moment a bus was passing in high velocity. The timing was so precise that I believe that the bus driver seen what hapend. But I saw everyting. 
-
-My little friend, beeing hit by the front of the bus, getting up and starting to come back, because he has shortet then the bus lower height, just to meet the back wheel of the bus.
-
-After the shock, yet not believing on was just happed, I rapidly go to him, and grab it from the ground. His already unconscios body with a smashed head hung inert on my hands. His blood ran down my forearms and I could somewath feel its vital force cushioning my arms.
-
-I never forget that day, ironicaly the "World Car Free Day", and my dog was hit by a bus. Then, I hide the body behind a bush, and walked back home, to tell the sad news to my family.
-
-After the general shock, I got a gift box that fit him and his beloved companion a old stuffed moose, he hijacked from my daughter and came back to grab him. 
-
-In the next days after his burial, the bike lane alone without my little friend, I feel like something had changed on me. 
-
-Before that I was leaving a shit of life, feeling locked on a relationship of "incompatible happines" where what makes on happy dont makes the other and vice versa. I was depressed, after a professional burnout, unemployed, on the verge of a divoce under medication and often thinking about suicide as an alternative. 
-
-But then, somehow the voluntary sacrifice of that dog, left me a gift: A overhelming sense of compassion all the beings and for the life I never experienced. The proximity of the death  brings me the love for the life. I got the religious meaning of the sacrifice.
-
-Walking the byke lane alone without my little friend, I learned to transmute to sorrow in gratitude, so everytime I remembered him, I remembered a previous moment we passed that point of the track and smiled. 
-
-That experienc bringing me a new view of the life and about what really matters on it. With that a somewhat renewed view I got a new job and decided to start again.
-
-From my cubicle, as the seconds was passing I started to count the seconds until the iconic time stamp 11/11/11 11:11:11.
-I looked to my coworkers and said: The world is not over... yet! and look back to my screen, tring to solve the thing they was paying me to.
-
-At that time I did not know what the live has reserved to me, my new journey was just begining, and my life was near of a new plot twist
-
-# Preface
-
-> Two plus two
-> Rodrigo couldn't understand why he needed to learn mathematics, since his pocket calculator would perform all the calculations for him, for the rest of his life. So the teacher decided to tell a story.
-> She told the story of the Supercomputer. One day, she said, all the computers in the world would be unified into a single system, with its center in some city in Japan. Every home, every place in the world would have terminals connected to the Supercomputer. People would use it for shopping, messaging, booking flights, and seeking advice on personal matters. For everything. No one would need individual watches, books, or portable calculators anymore. There would be no need to study. Everything anyone would want to know about anything would be stored in the Supercomputer's memory, accessible to all. In a fraction of a second, the answer to any query would appear on the nearest screen. And there would be billions of screens scattered wherever people might be, from public restrooms to space stations. All one would have to do is press a button to obtain the desired information.
-> One day, a boy would ask his father:
-> - Dad, what is two plus two?
-> - Don't ask me, ask Him - the father would reply.
-> - And the boy would press the appropriate buttons, and in a split second, the answer would appear on the screen. Then the boy would say:
-> How do I know the answer is correct?
-> - Because He said it's correct - the father would respond.
-> - What if He's wrong?
-> - He's never wrong.
-> - But what if He is?
-> - We can always count on our fingers.
-> - What?
-> - Count on our fingers, like the ancients did. Raise two fingers. Now two more. See? One, two, three, four. The computer is right.
-> - But, dad, what about 362 times 17? We can't count that on our fingers. Not unless we gather a lot of people and use their fingers and toes. How can we be sure His answer is correct? What if the Computer is lying?
-> Rodrigo liked the story, but he said that when no one knew to do math (and critical thinking) anymore and couldn't put the Computer to the test, it wouldn't make a difference whether the Computer was right or not, since its answer would be the only one available and, therefore, the correct one, even if it was wrong, so...
-> Then the father sighed and said: 
-> - My son, we may never know...
-> Then it was the teacher's turn to sigh.
-
-A motivatinal is a tale from the Brazilian write Luiz Fernando Veríssimo, about the credibility of an AGI. 
-
-Could we trust it? How could we resolve the allucinations of the current AIs giving them a solid natural fundation scafold already defined by the IChing Universal concepts as compartments of a 3d matrix to reference and index similar concepts.
+## License
+TruthServer is licensed under the MIT license. See the LICENSE file for more information.

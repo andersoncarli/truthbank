@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Oracle</title>
+<style>
+  body { font-family: sans-serif; text-align: center; }
+  #hexagram { font-size: 2em; }
+</style>
+</head>
+<body>
+<h1>I Ching Oracle</h1>
+<p>Click or press a key to add a line.</p>
+<div id="hexagram"></div>
+<script>
+  const bitSequences = ['000', '010', '110', '001', '101', '011', '111', '100'];
+  let lines = [];
+
+  function drawHexagram() {
+    const hexagram = document.getElementById('hexagram');
+    hexagram.innerHTML = lines.map(line => line === '000' ? '𝌀' : line === '010' ? '𝌆' : line === '110' ? '𝌁' : '𝌇').join('<br>');
+  }
+
+  function addLine() {
+    if (lines.length < 6) {
+      const randomIndex = Math.floor(Math.random() * 8);
+      lines.push(bitSequences[randomIndex]);
+      drawHexagram();
+    }
+  }
+
+  document.addEventListener('click', addLine);
+  document.addEventListener('keydown', addLine);
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hexagram Testbed</title>
+  <style>
+    .hexagram {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trigram {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .line {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 2em;
+    }
+
+    .part {
+      width: 1em;
+      height: 1em;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .solid {
+      background-color: black;
+    }
+
+    .mutate {
+      font-size: 2em;
+    }
+
+    .mutation {
+      font-size: 1.5em;
+    }
+
+    .mutated .part.mutation {
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="hexagram-container"></div>
+  <script>
+    function Monogram(value) {
+      const line = document.createElement('div');
+      line.classList.add('line');
+      if (value !== '') {
+        line.classList.add(value === '111' ? 'mutated' : '');
+      }
+      line.innerHTML = `<div class="part ${value[0] === '1' ? 'solid' : ''}"></div>
+                    <div class="part ${value[1] === '1' ? 'solid' : ''}"></div>
+                    <div class="part ${value[2] === '1' ? 'solid' : ''} ${value !== '000' && value !== '111' ? 'mutate' : ''}">·</div>
+                    <div class="part mutation ${value === '111' ? 'solid' : ''}">${value === '111' ? 'X' : ''}</div>`;
+      return line;
+    }
+
+
+    function Hexagram(bits) {
+      const hexagram = document.createElement('div');
+      hexagram.classList.add('hexagram');
+
+      const lines = bits.match(/.{1,3}/g).filter(Boolean).map(Monogram);
+      lines.reverse().forEach(line => hexagram.appendChild(line));
+
+      return hexagram;
+    }
+
+    const hexagramContainer = document.getElementById('hexagram-container');
+    const hexagram = Hexagram('100010000100000000');
+    hexagramContainer.appendChild(hexagram);
+  </script>
+</body>
+
+</html>
