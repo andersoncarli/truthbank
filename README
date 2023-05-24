@@ -1,4 +1,5 @@
 ## Introduction
+
 TruthServer is a web application that allows users to submit logical statements and propositons and receive a credibility score for that statement. it is the practical application of the [TruthBank](./BOOK) project/book. Using a custom implementation of a Bayesian truth testing algorithm to calculate the credibility. Or a random one working as a oracle at user will.
 
 The algorithm works by breaking down each statement into its sub-propositions or premises and assigning prior probabilities to each sub-proposition based on the quantifier used in the statement. It then uses evidence from previously submitted premises to update the probabilities of each sub-proposition and calculates the conditional probability of each sub-proposition being true given the updated evidence.
